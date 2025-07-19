@@ -18,7 +18,7 @@ Goal: Transforming the data loaded in DWH into Analytical Views developing a dbt
   ## 2. Develop dbt models
 
   ### Workflow
-  <img src="snapshots/workflow.jpg" alt="wf" height="400" width="800">
+  <img src="taxi_rides_ny/snapshots/workflow.jpg" alt="wf" height="400" width="800">
 
 Staging models:
 - [`schema.yml`](taxi_rides_ny/models/staging/schema.yml): define the sources, database, schema and tables.
@@ -28,7 +28,7 @@ Macros:
 - [`get_payment_type_description.sql`](taxi_rides_ny/macros/get_payment_type_description.sql)
 
 Seeds:
-- [``taxi_zone_lookup.csv`](taxi_rides_ny/macros/`taxi_zone_lookup.csv)
+- [``taxi_zone_lookup.csv`](taxi_rides_ny/seeds/`taxi_zone_lookup.csv)
 
 Core models:
 - [`dim_zones.sql`](taxi_rides_ny/models/core/dim_zones.sql): define zone information where the taxis operate
@@ -36,7 +36,7 @@ Core models:
 - [`dm_monthly_zone_revenue.sql`](taxi_rides_ny/models/core/dm_monthly_zone_revenue.sql): creates a table summarizing revenue-related metrics for trips data
 
 The dbt project looks like this:
-<img src="snapshots/dbt.jpg" alt="wf" height="400" width="800">
+<img src="taxi_rides_ny/snapshots/dbt.jpg" alt="wf" height="400" width="800">
 
 
   ## 3. Build the model
@@ -53,5 +53,5 @@ _Alternative: use `$ dbt build` to execute with one command the 3 steps above to
 
   ## 5. Visualize the transformed data
 
-  <img src="snapshots/dashboard.jpg" alt="wf" height="400" width="800">
+  <img src="taxi_rides_ny/snapshots/dashboard.jpg" alt="wf" height="400" width="800">
 
