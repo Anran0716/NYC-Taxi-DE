@@ -28,7 +28,7 @@ Macros:
 - [`get_payment_type_description.sql`](taxi_rides_ny/macros/get_payment_type_description.sql)
 
 Seeds:
-- [``taxi_zone_lookup.csv`](taxi_rides_ny/seeds/`taxi_zone_lookup.csv)
+- [`taxi_zone_lookup.csv`](taxi_rides_ny/seeds/`taxi_zone_lookup.csv)
 
 Core models:
 - [`dim_zones.sql`](taxi_rides_ny/models/core/dim_zones.sql): define zone information where the taxis operate
@@ -53,5 +53,5 @@ _Alternative: use `$ dbt build` to execute with one command the 3 steps above to
 
   ## 5. Visualize the transformed data
 
-  <img src="taxi_rides_ny/snapshots/dashboard.jpg" alt="wf" height="400" width="800">
+  <img src="taxi_rides_ny/snapshots/dashboard.jpg" alt="wf" height="600" width="800">
 
