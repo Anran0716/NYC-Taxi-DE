@@ -62,6 +62,6 @@ graph LR
 
 The flow code: [`06_gcp_taxi.yaml`](flows/gcp_taxi.yaml).
 
-We can now schedule the same pipeline shown above to run daily at 9 AM UTC for the green dataset and at 10 AM UTC for the yellow dataset. You can backfill historical data directly from the Kestra UI.
+We can now schedule the same pipeline shown above to run daily at 9 AM UTC for the green dataset and at 10 AM UTC for the yellow dataset. 
 
 The flow code: [`06_gcp_taxi_scheduled.yaml`](flows/gcp_taxi_scheduled.yaml).
