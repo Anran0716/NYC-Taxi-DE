@@ -1,4 +1,4 @@
-# NYC-Taxi-DE
+# NYC Taxi Data ETL & Analytics Pipeline
 
 This project builds an end-to-end data engineering pipeline using NYC Taxi Trip dataset. It showcases how to collect, process, store, and analyze large-scale taxi data with ETL pipelines.
 
